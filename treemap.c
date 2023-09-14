@@ -130,6 +130,11 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       node->parent->right=child;
       child->parent=node->parent;
     }
+    free(node);
+  }else{
+    TreeNode* min = minimum(node->right);
+    node->pair=min->pair;
+    removeNode(tree, min);
   }
   
 }
