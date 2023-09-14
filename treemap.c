@@ -92,7 +92,7 @@ TreeNode * minimum(TreeNode * x){
   TreeNode* aux = x->right;
   
   while(aux!=NULL){
-    aux=aux->left;
+    aux=aux->right;
     min=aux;
   }
   return min;
