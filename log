@@ -135,3 +135,18 @@ treemap.c:52:25: error: expected expression before ‘;’ token
 cc1: all warnings being treated as errors
 Compilation failed
 1cb601c
+Thu 14 Sep 2023 04:29:46 PM UTC: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:53:6: error: expected ‘(’ before ‘nuevoPar’
+   53 |   if nuevoPar!=NULL{
+      |      ^~~~~~~~
+      |      (
+treemap.c:53:6: error: statement with no effect [-Werror=unused-value]
+   53 |   if nuevoPar!=NULL{
+      |      ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7276e04
