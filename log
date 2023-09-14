@@ -90,3 +90,14 @@ treemap.c:84:25: error: expected ‘;’ before ‘}’ token
       |     ~                    
 Compilation failed
 c2edf32
+Thu 14 Sep 2023 04:24:18 PM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:85:14: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   85 |       return node;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d0dec4c
