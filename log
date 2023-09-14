@@ -107,3 +107,17 @@ Thu 14 Sep 2023 04:24:28 PM UTC:
  tests:  11|6
 total_score: 15/70
 aaf5042
+Thu 14 Sep 2023 04:26:35 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:17: error: initialization of ‘Pair *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+   51 |   Pair* nuevo = createTreeNode(key, value);
+      |                 ^~~~~~~~~~~~~~
+treemap.c:51:9: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   51 |   Pair* nuevo = createTreeNode(key, value);
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9ec3931
