@@ -168,7 +168,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-  tre
+  TreeNode* minimo=minimum(tree->root);
+  
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
