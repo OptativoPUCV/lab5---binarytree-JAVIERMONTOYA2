@@ -170,7 +170,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* minimo=minimum(tree->root);
   tree->current=minimo;
-  return minimo;
+  return minimo->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
