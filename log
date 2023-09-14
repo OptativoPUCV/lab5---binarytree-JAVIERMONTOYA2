@@ -412,3 +412,14 @@ Thu 14 Sep 2023 06:32:50 PM UTC:
  tests:  16|4
 total_score: 30/70
 acb8f2d
+Thu 14 Sep 2023 06:34:07 PM UTC: 
+ treemap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:117:15: error: variable ‘child’ set but not used [-Werror=unused-but-set-variable]
+  117 |     TreeNode* child;
+      |               ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c33a7b2
