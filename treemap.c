@@ -168,10 +168,13 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+  return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+  TreeNode* minimo=minimum(tree->root);
+  tree->current=minimo;
+  return minimo->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
