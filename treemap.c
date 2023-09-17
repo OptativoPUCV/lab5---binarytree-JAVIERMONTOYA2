@@ -183,6 +183,11 @@ Pair * nextTreeMap(TreeMap * tree) {
     tree->current = minimo;
     return minimo->pair;
   }
-  
+  else{
+    TreeNode* ancestor = tree->current->parent;
+    while(ancestor!=NULL && tree->lower_than(ancestor->pair->key,tree->current->pair->key)){
+      
+    }
+  }
     return NULL;
 }
