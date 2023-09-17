@@ -170,7 +170,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* nodo = NULL;
   TreeNode* aux = tree->root;
-  TreeNode* parent= NULL;
+  //TreeNode* parent= NULL;
   while(aux!=NULL){
     //parent=aux;
     int cmp=tree->lower_than(key,aux->pair->key);
