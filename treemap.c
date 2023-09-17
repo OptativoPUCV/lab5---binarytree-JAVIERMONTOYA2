@@ -173,7 +173,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* parent= NULL;
   while(aux!=NULL){
     parent=aux;
-    if(tree->lower_than(key,aux->pair->key)==0){
+    int cmp=strcmp(key,aux->pair->key);
+    if(cmp==0){
       nodo=aux;
       return nodo->pair;
     }
