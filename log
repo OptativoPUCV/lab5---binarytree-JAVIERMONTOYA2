@@ -564,3 +564,17 @@ Sun 17 Sep 2023 02:03:58 AM UTC:
  tests:  25|1
 total_score: 60/70
 d1da390
+Sun 17 Sep 2023 02:11:08 AM UTC: 
+ treemap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:173:13: error: unused variable ‘parent’ [-Werror=unused-variable]
+  173 |   TreeNode* parent= NULL;
+      |             ^~~~~~
+treemap.c:171:13: error: unused variable ‘nodo’ [-Werror=unused-variable]
+  171 |   TreeNode* nodo = NULL;
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+642f4ac

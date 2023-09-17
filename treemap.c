@@ -168,6 +168,12 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+  TreeNode* nodo = NULL;
+  TreeNode* aux = tree->root;
+  TreeNode* parent= NULL;
+  while(aux!=NULL){
+    
+  }
   return NULL;
 }
 
