@@ -188,6 +188,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     while(ancestor!=NULL && tree->lower_than(ancestor->pair->key,tree->current->pair->key)){
       ancestor = ancestor->parent;
     }
+    tree->current=ancestor;
+    
   }
     return NULL;
 }
