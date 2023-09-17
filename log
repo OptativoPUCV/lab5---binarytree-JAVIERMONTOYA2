@@ -528,3 +528,9 @@ treemap.c:182:15: error: unused variable ‘minimo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8870ca1
+Sun 17 Sep 2023 01:53:00 AM UTC: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  22|2
+total_score: 50/70
+aa9e225
