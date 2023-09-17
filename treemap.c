@@ -180,7 +180,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }
     if(cmp<0){
       aux=aux->left;
-      nodo=parent;
+      nodo=aux;
     }else{
       aux=aux->right;
       nodo=aux;
