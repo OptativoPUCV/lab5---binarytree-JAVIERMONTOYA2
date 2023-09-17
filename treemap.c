@@ -191,7 +191,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     tree->current=ancestor;
     if(ancestor!=NULL){
       return ancestor->pair;
+    }else{
+      return NULL;
     }
   }
-    return NULL;
 }
