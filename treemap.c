@@ -179,11 +179,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
       return nodo->pair;
     }
     if(cmp<0){
+      nodo=aux;
       aux=aux->right;
-      nodo=aux;
     }else{
-      aux=aux->left;
       nodo=aux;
+      aux=aux->left;
     }
   }
   if(nodo!=NULL){
